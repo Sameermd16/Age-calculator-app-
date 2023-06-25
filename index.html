@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,10 +16,38 @@
   </style>
 </head>
 <body>
+  <main class="container">
+    <div class="inputs_div">
+      <div style="display:flex;flex-direction: column">
+        <span>DAY</span>
+        <input type="text" id="day">
+        <small class="error_day"></small>
+      </div>
+      <div style="display:flex;flex-direction: column">
+        <span>MONTH</span>
+        <input type="text" id="month">
+        <small class="error_month"></small>
+      </div>
+      <div style="display:flex;flex-direction: column">
+        <span>YEAR</span>
+        <input type="text" id="year">
+        <small class="error_year"></small>
+      </div>
+      
+    </div>
+    <div class="btn_div">
+      <button type="submit" id="submit_btn"><img src="assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <section class="output">
+      <p class="output"><span class="output_year output_text">--</span>years</p>
+      <p class="output"><span class="output_month output_text">--</span>months</p>
+      <p class="output"><span class="output_day output_text">--</span>days</p>
+    </section>
+  </main>
 
-  
 
-  Day
+
+  <!-- Day
   DD
 
   Month
@@ -29,11 +58,12 @@
 
   -- years
   -- months
-  -- days
+  -- days -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
